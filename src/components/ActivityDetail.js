@@ -16,7 +16,7 @@ export default function ActivityDetail({ item }) {
         <h2>{item.to}</h2>
       </div>
       <div className="call-time">
-        <p>{item.create_at}</p>
+        <p>{item.created_at}</p>
       </div>
     </div>
   );
