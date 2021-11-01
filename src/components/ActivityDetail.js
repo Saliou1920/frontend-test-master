@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../css/activityDetail.css";
 export default function ActivityDetail({ item }) {
   //   var Date = () => {
   //     const [memo, setMemo] = useState("");
@@ -22,17 +22,19 @@ export default function ActivityDetail({ item }) {
         <p>{item.created_at.slice(0, 10)}</p>
       </div>
       <div className="detail-body">
-        <div className="call-logo">
-          {item.direction === "inbound" && (
-            <img src="../../public/incoming-call.svg" width="25px" />
-          )}
-          {item.direction === "outbound" && (
-            <img src="../../public/outgoing-call.svg" width="25px" />
-          )}
-        </div>
-        <div className="call-detail">
-          <h1>{item.from}</h1>
-          <h2>{item.to}</h2>
+        <div className="call-content">
+          <div className="call-logo">
+            {item.direction === "inbound" && (
+              <img src="../../public/incoming-call.svg" width="25px" />
+            )}
+            {item.direction === "outbound" && (
+              <img src="../../public/outgoing-call.svg" width="25px" />
+            )}
+          </div>
+          <div className="call-detail">
+            <h1>{item.from}</h1>
+            <h2>{item.to}</h2>
+          </div>
         </div>
         <div className="call-time">
           <p>{item.created_at.slice(11, 16)}</p>

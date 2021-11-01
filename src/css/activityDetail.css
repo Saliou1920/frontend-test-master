@@ -1,4 +1,24 @@
-.detail-container {
+.detail-container,
+.detail-body,
+.call-content {
   display: flex;
+}
+.detail-container {
   flex-direction: column;
+}
+
+.detail-body {
+  justify-content: space-between;
+}
+.detail-header {
+  text-align: center;
+}
+.call-logo {
+  margin-right: 10px;
+}
+.call-detail h1 {
+  margin-bottom: 7px;
+}
+.call-content {
+  align-items: center;
 }
