@@ -11,7 +11,6 @@ export default function ActivityFeed() {
       {activity.map((item, index) => (
         <ActivityDetail key={index} item={item} />
       ))}
-      {console.log("here")}
     </div>
   );
 }
