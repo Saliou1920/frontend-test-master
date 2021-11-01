@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ActivityFeed from "./components/ActivityFeed.js";
 
 import Header from "./Header.jsx";
 import useFetchActivity from "./utils/useFetchActivity.js";
@@ -12,8 +13,7 @@ const App = () => {
     <div className="container">
       <Header />
       <div className="container-view">
-        Some activities should be here
-        {console.log(error)};
+        <ActivityFeed />
       </div>
     </div>
   );
