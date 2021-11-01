@@ -19,6 +19,7 @@ export default function useFetchActivity() {
       .then((response) => {
         setActivity(response.data);
         setLoading(false);
+        console.log(response.data);
       })
       .catch((error) => {
         if (axios.isCancel(error)) {
