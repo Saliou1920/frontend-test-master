@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../css/activityDetail.css";
 export default function ActivityDetail({ item }) {
+  const [isActive, setIsActive] = useState(false);
+
   //   var Date = () => {
   //     const [memo, setMemo] = useState("");
   //     var options = {
@@ -38,8 +40,21 @@ export default function ActivityDetail({ item }) {
         </div>
         <div className="call-time">
           <p>{item.created_at.slice(11, 16)}</p>
+          <div onClick={() => setIsActive(!isActive)}>
+            {isActive ? (
+              <img src="../../public/minus-circle.svg" width="15px" />
+            ) : (
+              <img src="../../public/plus-circle.svg" width="15px" />
+            )}
+          </div>
         </div>
       </div>
+      {isActive && (
+        <div className="detail-body-content">
+          <p>{`Duration : ${item.duration} minutes`}</p>
+          <p>{`Via : ${item.via}`}</p>
+        </div>
+      )}
     </div>
   );
 }

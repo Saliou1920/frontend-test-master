@@ -12,6 +12,31 @@ const App = () => {
   return (
     <div className="container">
       <Header />
+      <div class="box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button
+            type="button"
+            class="toggle-btn"
+            onClick={() => {
+              var btn = document.getElementById("btn");
+              btn.style.left = "0";
+            }}
+          >
+            All
+          </button>
+          <button
+            type="button"
+            class="toggle-btn"
+            onClick={() => {
+              var btn = document.getElementById("btn");
+              btn.style.left = "65px";
+            }}
+          >
+            Missed
+          </button>
+        </div>
+      </div>
       <div className="container-view">
         <ActivityFeed />
       </div>

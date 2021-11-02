@@ -1,6 +1,7 @@
 .detail-container,
 .detail-body,
-.call-content {
+.call-content,
+.call-time {
   display: flex;
 }
 .detail-container {
@@ -9,16 +10,27 @@
 
 .detail-body {
   justify-content: space-between;
+  margin-top: 10px;
 }
 .detail-header {
   text-align: center;
+  border-bottom: 1px solid rgb(184, 182, 182, 0.2);
 }
 .call-logo {
   margin-right: 10px;
 }
 .call-detail h1 {
   margin-bottom: 7px;
+  font-weight: bold;
 }
-.call-content {
+.call-content,
+.call-time {
   align-items: center;
+}
+.call-logo img {
+  color: black;
+}
+.call-time div {
+  margin-left: 5px;
+  cursor: pointer;
 }

@@ -16,10 +16,38 @@
 
   background: white;
   border-radius: 3px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.9);
 }
 
 #app .container-view {
   padding: 20px;
 }
 
+.button-box {
+  width: 140px;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 1px;
+  background: rgb(255, 255, 255);
+}
+
+.toggle-btn {
+  padding: 7px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+}
+
+#btn {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  background: #028a20;
+  border-radius: 10px;
+  transition: 0.5s;
+}
