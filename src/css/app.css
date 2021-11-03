@@ -7,7 +7,6 @@
   top: 0;
   right: 0;
   bottom: 0;
-  /* height: 100vh; */
 }
 
 #app .container {
@@ -22,14 +21,14 @@
 
 #app .container-view {
   padding: 10px 20px;
-  height: 40vh;
+  height: 550px;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .button-box {
   width: 140px;
-  margin: 5px auto;
+  margin: 20px auto;
   position: relative;
   border-radius: 5px;
   background: rgb(255, 255, 255);

@@ -34,7 +34,9 @@ export default function ActivityDetail({ item }) {
             )}
           </div>
           <div className="call-detail">
-            <h1>{item.from}</h1>
+            <h1 className={item.call_type === "missed" ? "missed" : ""}>
+              {item.from}
+            </h1>
             <h2>{item.to}</h2>
           </div>
         </div>
