@@ -7,11 +7,11 @@ export default function ActivityFeed({ boxSelector, setBoxSelector }) {
   const [activity, setActivity, loading, error] = useFetchActivity();
 
   function filterCall(std) {
-    if (boxSelector === "all") {
+    if (std.is_archived === boxSelector) {
       return std;
-    } else if (std.call_type.toLowerCase().includes("missed")) {
+    } else if (std.call_type.toLowerCase().includes(boxSelector)) {
       return std;
-    } else if (std.call_type.toLowerCase().includes("voicemail")) {
+    } else if (std.call_type.toLowerCase().includes(boxSelector)) {
       return std;
     }
   }
@@ -30,7 +30,7 @@ export default function ActivityFeed({ boxSelector, setBoxSelector }) {
               var btn = document.getElementById("btn");
               btn.style.left = "0";
               console.log("all");
-              setBoxSelector("all");
+              setBoxSelector(false);
             }}
           >
             All

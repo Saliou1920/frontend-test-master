@@ -38,3 +38,10 @@
 .missed {
   color: red;
 }
+
+.detail-body-content {
+  padding-left: 35px;
+}
+.detail-body-content p {
+  color: grey;
+}

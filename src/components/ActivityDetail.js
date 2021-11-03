@@ -3,21 +3,6 @@ import "../css/activityDetail.css";
 export default function ActivityDetail({ item }) {
   const [isActive, setIsActive] = useState(false);
 
-  //   var Date = () => {
-  //     const [memo, setMemo] = useState("");
-  //     var options = {
-  //       weekday: "long",
-  //       year: "numeric",
-  //       month: "long",
-  //       day: "numeric",
-  //     };
-  //     if (item.created_at.slice(0, 10) !== memo) {
-  //       var date = new Date(item.created_at.slice(0, 10));
-  //       setMemo(item.created_at.slice(0, 10));
-  //       return date.toLocaleDateString("en-US", options);
-  //     }
-  //   };
-
   return (
     <div className="detail-container">
       <div className="detail-header">
@@ -53,8 +38,18 @@ export default function ActivityDetail({ item }) {
       </div>
       {isActive && (
         <div className="detail-body-content">
+          <p>{item.call_type}</p>
           <p>{`Duration : ${item.duration} minutes`}</p>
           <p>{`Via : ${item.via}`}</p>
+          {!item.is_archived && (
+            <button
+              onClick={() => {
+                item.is_archived = true;
+              }}
+            >
+              archived
+            </button>
+          )}
         </div>
       )}
     </div>

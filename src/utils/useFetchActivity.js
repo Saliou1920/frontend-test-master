@@ -17,6 +17,7 @@ export default function useFetchActivity() {
     axios
       .get(url, { signal: signal })
       .then((response) => {
+        response.data[0].is_archived = true;
         setActivity(response.data);
         setLoading(false);
         console.log(response.data);
