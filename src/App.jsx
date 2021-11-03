@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ActivityFeed from "./components/ActivityFeed.js";
+import Footer from "./components/Footer.js";
 
 import Header from "./Header.jsx";
 import useFetchActivity from "./utils/useFetchActivity.js";
@@ -27,7 +28,7 @@ const App = () => {
           </button>
           <button
             type="button"
-            class="toggle-btn"
+            className="toggle-btn"
             onClick={() => {
               var btn = document.getElementById("btn");
               btn.style.left = "65px";
@@ -40,6 +41,7 @@ const App = () => {
       <div className="container-view">
         <ActivityFeed />
       </div>
+      <Footer />
     </div>
   );
 };

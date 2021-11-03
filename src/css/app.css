@@ -7,6 +7,7 @@
   top: 0;
   right: 0;
   bottom: 0;
+  /* height: 100vh; */
 }
 
 #app .container {
@@ -28,10 +29,11 @@
 
 .button-box {
   width: 140px;
-  margin: 7px auto;
+  margin: 5px auto;
   position: relative;
-  border-radius: 1px;
+  border-radius: 5px;
   background: rgb(255, 255, 255);
+  /* border: 1px solid black; */
 }
 
 .toggle-btn {
@@ -50,7 +52,7 @@
   position: absolute;
   width: 60px;
   height: 100%;
-  background: #028a20;
-  border-radius: 10px;
-  transition: 0.5s;
+  background: #77d970;
+  border-radius: 7px;
+  transition: 0.3s;
 }
