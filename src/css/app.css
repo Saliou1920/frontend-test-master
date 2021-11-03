@@ -25,33 +25,3 @@
   overflow-x: hidden;
   overflow-y: auto;
 }
-
-.button-box {
-  width: 140px;
-  margin: 20px auto;
-  position: relative;
-  border-radius: 5px;
-  background: rgb(255, 255, 255);
-  /* border: 1px solid black; */
-}
-
-.toggle-btn {
-  padding: 7px 20px;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  outline: none;
-  position: relative;
-  text-align: center;
-}
-
-#btn {
-  left: 0;
-  top: 0;
-  position: absolute;
-  width: 60px;
-  height: 100%;
-  background: #77d970;
-  border-radius: 7px;
-  transition: 0.3s;
-}

@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import useFetchActivity from "../utils/useFetchActivity";
 import ActivityDetail from "./ActivityDetail";
+import "../css/activityFeed.css";
 
-export default function ActivityFeed() {
+export default function ActivityFeed({ boxSelector, setBoxSelector }) {
   const [activity, setActivity, loading, error] = useFetchActivity();
-  const [call, setCall] = useState("");
-  const [boxSelector, setBoxSelector] = useState("all");
 
   function filterCall(std) {
     if (boxSelector === "all") {
       return std;
     } else if (std.call_type.toLowerCase().includes("missed")) {
+      return std;
+    } else if (std.call_type.toLowerCase().includes("voicemail")) {
       return std;
     }
   }
