@@ -1,58 +1,30 @@
-## Summary
+# LeapGrad Frontend Technical assessment
 
-The goal of this test is to make you code a small ReactJS app. We have prepared a skeleton app for you, but please change whatever you want (CSS files, HTML structure, JS structure...).
+## Welcome! 👋
 
-The app will have two different components:
-- **Activity Feed** - simple list of calls
-- **Activity Detail** - detail of a call
+- Live Site URL: [Here](https://eloquent-lamarr-30c890.netlify.app/)
 
-Show us what you can do in 6 hours top :) Focus on design, development - all aspects!
+## Table of contents 🙂
 
-**Bonus:** the final user should be able to archive a call. The call will no longer be displayed on the Activity Feed. Please code that only if you have extra time.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Built with](#built-with)
+- [Author](#author)
 
+## Overview 🍡
 
-To give you an idea, here what our app looks like:
+The goal of this test is to make a small ReactJS app that will list of calls, can archive a call...
 
+## Screenshot 💻
 
-![app](https://user-images.githubusercontent.com/630714/29357034-763d7216-8276-11e7-8bcb-e77d9645dfcc.png)
+<p align="center">
+  <img src="#" alt="App"/>
+</p>
 
-## Installation
+## Built with 🧰
 
-We're using [yarn](https://yarnpkg.com) here:
+- React Js
 
-```
-yarn install
-yarn start
-```
+## Author ✨
 
-## API documentation
-
-### Routes
-
-Here is the API address: https://aircall-job.herokuapp.com.
-
-As you can see, it's hosted on a free Heroku server, which means that the first time you will fetch the API, it will take few seconds to answer.
-
-- **GET** - https://aircall-job.herokuapp.com/activities: get calls to display in the Activity Feed
-- **GET** - https://aircall-job.herokuapp.com/activities/:id: retrieve a specific call details
-- **POST** - https://aircall-job.herokuapp.com/activities/:id: update a call. The only field updatable is `is_archived (bool)`. You'll need to send a JSON in the request body:
-```
-{
-  is_archived: true
-}
-```
-- **GET** - https://aircall-job.herokuapp.com/reset: Reset all calls to initial state (usefull if you archived all calls).
-
-### Call object
-
-- **id** - unique ID of call
-- **created_at** - creation date
-- **direction** - `inbound` or `outbound` call
-- **from** - caller's number
-- **to** - callee's number
-- **via** - Aircall number used for the call
-- **duration** - duration of a call (in seconds)
-- **is_archived** - call is archived or not
-- **call_type** - can be a `missed`, `answered` or `voicemail` call.
-
-
+- Linkedin - [@Saliou](https://www.linkedin.com/in/saliou-diop-527741112/)
