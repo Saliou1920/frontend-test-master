@@ -47,7 +47,7 @@ export default function ActivityDetail({ item }) {
                 item.is_archived = true;
               }}
             >
-              archived
+              archive
             </button>
           )}
         </div>
