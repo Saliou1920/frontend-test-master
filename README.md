@@ -18,7 +18,7 @@ The goal of this test is to make a small ReactJS app that will list of calls, ca
 ## Screenshot 💻
 
 <p align="center">
-  <img src="#" alt="App"/>
+  <img src="public/demo.webp" alt="App"/>
 </p>
 
 ## Built with 🧰
