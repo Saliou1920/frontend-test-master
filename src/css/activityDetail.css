@@ -56,3 +56,7 @@
   border: none;
   padding: 5px;
 }
+
+.call-logo span {
+  size: 2em;
+}

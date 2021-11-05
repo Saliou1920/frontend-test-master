@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../css/activityDetail.css";
+import { BsFillNodePlusFill, BsFillNodeMinusFill } from "react-icons/bs";
+import { FiPhoneIncoming, FiPhoneOutgoing } from "react-icons/fi";
+
 export default function ActivityDetail({ item }) {
   const [isActive, setIsActive] = useState(false);
 
@@ -11,11 +14,12 @@ export default function ActivityDetail({ item }) {
       <div className="detail-body">
         <div className="call-content">
           <div className="call-logo">
-            {item.direction === "inbound" && (
-              <img src="../../public/incoming-call.svg" width="25px" />
-            )}
+            {item.direction === "inbound" && <FiPhoneIncoming size="1.4em" />}
             {item.direction === "outbound" && (
-              <img src="../../public/outgoing-call.svg" width="25px" />
+              <FiPhoneOutgoing
+                size="1.4em"
+                color={item.call_type === "missed" ? "red" : ""}
+              />
             )}
           </div>
           <div className="call-detail">
@@ -29,9 +33,9 @@ export default function ActivityDetail({ item }) {
           <p>{item.created_at.slice(11, 16)}</p>
           <div onClick={() => setIsActive(!isActive)}>
             {isActive ? (
-              <img src="../../public/minus-circle.svg" width="15px" />
+              <BsFillNodeMinusFill size="1.5em" />
             ) : (
-              <img src="../../public/plus-circle.svg" width="15px" />
+              <BsFillNodePlusFill size="1.5em" />
             )}
           </div>
         </div>
