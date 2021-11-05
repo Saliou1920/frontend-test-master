@@ -26,7 +26,7 @@ export default function ActivityDetail({ item }) {
             <h1 className={item.call_type === "missed" ? "missed" : ""}>
               {item.from}
             </h1>
-            <h2>{item.to}</h2>
+            <h2>{item.to !== null ? `tried to call on ${item.to}` : ""}</h2>
           </div>
         </div>
         <div className="call-time">
