@@ -1,5 +1,9 @@
 import React from "react";
 import "../css/footer.css";
+import { BsArchiveFill } from "react-icons/bs";
+import { MdOutlineArchive } from "react-icons/md";
+import { BiDialpad } from "react-icons/bi";
+import { FaVoicemail } from "react-icons/fa";
 const Footer = ({ boxSelector, setBoxSelector }) => {
   return (
     <nav className="footer-nav">
@@ -11,11 +15,11 @@ const Footer = ({ boxSelector, setBoxSelector }) => {
           console.log(boxSelector);
         }}
       >
-        <img src="../../public/archive.svg" alt="archive" />
+        <MdOutlineArchive size="3em" />
         <span className="nav-label">Archive</span>
       </a>
       <a href="#" className="nav-link">
-        <img src="../../public/dialpad.svg" alt="archive" />
+        <BiDialpad size="3em" />
         <span className="nav-label">Dialpad</span>
       </a>
       <a
@@ -26,7 +30,7 @@ const Footer = ({ boxSelector, setBoxSelector }) => {
           console.log(boxSelector);
         }}
       >
-        <img src="../../public/voicemail.svg" alt="archive" />
+        <FaVoicemail size="3em" />
         <span className="nav-label">Voice Mail</span>
       </a>
     </nav>
