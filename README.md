@@ -2,7 +2,7 @@
 
 ## Welcome! 👋
 
-- Live Site URL: [Here](https://eloquent-lamarr-30c890.netlify.app/)
+- Live Site URL: [Here](https://suspicious-bartik-12a41a.netlify.app)
 
 ## Table of contents 🙂
 
